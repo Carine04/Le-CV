@@ -1,15 +1,16 @@
 body {
-  background-color: lightblue;
+  background-color: rgb(164, 212, 236);
 }
 
-#apropos {
+#apropos
+ {
     margin: 0.5rem;
-    
 }
 
 .data{
 
   margin: 50px 0px 5px;
-
 }
+
+
 

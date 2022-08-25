@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Mon CV{% endblock %}
+ 
+{% block content %}
+  <div id="apropos">
+  <div class="container-apropos">
+    <div class="row" style="background-color:  rgb(81, 141, 141)">
+        <div class="col-lg-3">
+          <img width="250" height="280" src={% static 'cv_app/image/image.jpg' %}/><br>
+        </div>
+        
+          <div class="col-lg-9">
+            <div class="data">
+              Nom    : {{ firstname}} {{ lastname}} <br>
+              Date de naissance: {{ date_of_birth}}<br>
+              Adresse      : {{ adress }}<br>
+              Email        : {{ email }}<br>
+              Numéro de téléphone : {{ phoneNumber }}<br>
+            </div> 
+        </div>    
+    </div>
+  </div>
+  
+  <div class="container-competence">
+    <h2>Mes competences</h2>
+    <ul>
+      <li>Langages parles : Français, Nerlandais, Anglais</li>
+      <li>Langages Informatique : JavaScript, php, python</li>
+      <li>Les frameworks : React, Symfony, Django</li>
+    
+      <li>Logiciels: Sage, Ciel</li>
+    </ul>
+  </div>
+  </div>
+{% endblock  %}
+ 
+</body>
+</html>
